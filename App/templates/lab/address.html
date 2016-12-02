@@ -1,0 +1,14 @@
+{% extends 'lab/base.html' %}
+{% block title %}Официальные дилеры{% endblock %}
+
+{% block header %}Официальные дилеры{% endblock %}
+
+{% block body %}
+    <ul>
+    {% for model in menu %}
+
+        {% include 'lab/address_item.html' %}
+
+    {% endfor %}
+    </ul>
+{% endblock %}

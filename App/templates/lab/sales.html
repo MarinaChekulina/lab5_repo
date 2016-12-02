@@ -1,0 +1,17 @@
+{% extends 'lab/base.html' %}
+{% block title %}Выгодные предложения{% endblock %}
+
+{% block header %}Выгодные предложения{% endblock %}
+
+{% block body %}
+
+<ul>
+    {% for model in menu %}
+        <li>{{ model.name }}
+            <p>{{ model.text }}</p>
+{#        <img src="{% static '/lab/images/' %}{{ model.id }}.png" class="img" >#}
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,8 @@
+ {% load staticfiles %}
+<li>
+            <p class="adr">{{ model.name }}</p>
+            <p>{{ model.adr }}</p>
+            <p>{{ model.time }}</p>
+            <p>{{ model.phone }}</p>
+        <img src="{% static '/lab/images/' %}{{ model.id }}.png" class="img" >
+</li>

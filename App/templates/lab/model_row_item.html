@@ -1,0 +1,5 @@
+{% load staticfiles %}
+<li>{{ model.name }}
+            <p>{{ model.text }}</p>
+        <img src="{% static '/lab/images/' %}{{ model.id }}.png" class="img" >
+</li>

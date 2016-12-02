@@ -1,0 +1,14 @@
+{% extends 'lab/base.html' %}
+
+{% block title %}Модельный ряд {% endblock %}
+
+{% block header %}Модельный ряд{% endblock %}
+
+{% block body %}
+    <ul>
+    {% for model in menu %}
+        {% include 'lab/model_row_item.html' %}
+
+    {% endfor %}
+    </ul>
+{% endblock %}
